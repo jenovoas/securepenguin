@@ -1,0 +1,42 @@
+# SecurePenguin .gitignore
+
+# Credenciales y Secretos (CRITICO)
+*.pem
+*.key
+*.pub
+*.conf
+*.json
+!metadata.json
+!package.json
+!composer.json
+.env
+.env.*
+credentials/
+secrets/
+
+# Directorios de Dependencias
+node_modules/
+vendor/
+target/
+dist/
+build/
+bin/
+pkg/
+go/
+
+# Logs y Estado
+*.log
+*.tmp
+*.bak
+.local/state/
+.claude/
+
+# IDE y Sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Excepciones específicas para configuración segura (si se requiere subir plantillas)
+!*.example.conf
+!*.template.json
